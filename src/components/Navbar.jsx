@@ -1,17 +1,17 @@
 import React from 'react'
 
 // Icons Imports
-import { AiOutlineMenu,AiOutlineVideoCameraAdd } from "react-icons/ai";
+import { AiOutlineMenu,AiOutlineVideoCameraAdd,AiOutlineSearch } from "react-icons/ai";
 import { FaMicrophone,FaUserCircle,FaRegBell } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className='w-full h-[56px] px-4 bg-gray-950 text-white flex flex-wrap justify-between items-center'>
+    <nav className='w-full h-[56px] fixed z-10 px-4 bg-gray-950 text-white flex flex-wrap justify-between items-center'>
         <div className='flex flex-row justify-start items-center'>
             <AiOutlineMenu className='text-white text-[40px] p-2 hover:bg-gray-900 cursor-pointer rounded-full' />
             <img src='./logo/youtubeLogo.png' alt='Youtube Logo' className='w-[90px] h-[20px]' />
         </div>
-        <div className='grow'>
+        <div className='grow md:block hidden'>
             <form>   
                 <div class="relative flex justify-center items-center">
                 <div class="absolute inset-y-0 right-1/4 me-10 flex items-center pl-3 ">
@@ -24,11 +24,14 @@ const Navbar = () => {
             </form>
         </div>
         <div className='flex justify-end items-center gap-2'>
+            <AiOutlineSearch className='md:hidden block text-white text-[40px] p-2 hover:bg-gray-900 cursor-pointer rounded-full' />
+            <FaMicrophone className='md:hidden block text-white text-[40px] p-2 hover:bg-gray-900 cursor-pointer rounded-full' />
             <AiOutlineVideoCameraAdd className='text-white text-[40px] p-2 hover:bg-gray-900 cursor-pointer rounded-full' />
             <FaRegBell className='text-white text-[40px] p-2 hover:bg-gray-900 cursor-pointer rounded-full' />
             <FaUserCircle className='text-white text-[40px] p-2 hover:bg-gray-900 cursor-pointer rounded-full' />
 
         </div>
+
     </nav>
   )
 }
