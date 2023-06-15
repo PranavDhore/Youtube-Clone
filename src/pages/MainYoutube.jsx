@@ -26,7 +26,7 @@ const MainYoutube = () => {
   return (
     <Base>
       <Sidebar youtubeHelp={youtubeHelp} homeData={homeData} exploreData={exploreData} moreFromYoutube={moreFromYoutube} />
-      <div className='absolute overflow-hidden z-0 top-[7.5%] right-0 w-[calc(100%-80px)] xl:w-[calc(100%-240px)]'>
+      <div className='absolute overflow-hidden  z-0 top-[7.5%] right-0 md:w-[calc(100%-80px)] xl:w-[calc(100%-240px)]'>
         <VideoCard video={video} />
       </div>
     </Base>

@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import MainYoutube from './pages/MainYoutube';
 
@@ -5,9 +6,14 @@ import MainYoutube from './pages/MainYoutube';
 
 function App() {
   return (
-    <div className="App">
-      <MainYoutube />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<MainYoutube />} />
+      </Routes>
+      
+
+    </BrowserRouter>
+    
   );
 }
 
