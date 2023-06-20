@@ -7,7 +7,7 @@ import { FaMicrophone,FaUserCircle,FaRegBell } from "react-icons/fa";
 const Navbar = () => {
     // Interchage dark: to its right
   return (
-    <nav className='w-full h-[56px] fixed z-10 px-4 bg-white text-black dark:bg-gray-950 dark:text-white flex flex-wrap justify-between items-center'>
+    <nav className='w-full h-[56px] fixed top-0 z-10 px-4 bg-white text-black dark:bg-gray-950 dark:text-white flex flex-wrap justify-between items-center'>
         <div className='flex flex-row justify-start items-center'>
             <AiOutlineMenu className='text-[40px] p-2 hover:bg-gray-200 dark:hover:bg-gray-900 cursor-pointer rounded-full' />
             <img src='./logo/youtubeLogo.png' alt='Youtube Logo' className='w-[90px] h-[20px]' />
